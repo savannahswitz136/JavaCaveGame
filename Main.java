@@ -1,3 +1,5 @@
+// Savannah
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -65,6 +67,7 @@ public class Main {
             );
 
             printStatus(players, goblins);
+            int count = 0;
 
             // ===== COMBAT LOOP =====
             while (!players.isEmpty() && !goblins.isEmpty()) {
@@ -73,7 +76,8 @@ public class Main {
                 for (int p = 0; p < players.size() && !goblins.isEmpty(); p++) {
                     Player player = players.get(p);
                     player.startTurn();
-
+                    //Change made below
+                    System.out.println("Start your turn ###########" + count);
                     System.out.println("\nPlayer " + player.getId() + ", choose an action:");
                     System.out.println("1) Attack");
                     System.out.println("2) Defend");
@@ -81,7 +85,8 @@ public class Main {
                     System.out.print("> ");
 
                     String choice = scanner.nextLine();
-
+                   //Changed 
+                    count=count+1;
                     switch (choice) {
                         case "1":
                             int damage = player.attack();

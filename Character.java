@@ -1,7 +1,3 @@
-//Savvvvvv
-////Hello world 
-
-
 
 // Base class for all characters in the game (players and enemies).
 // Contains shared health, defense, and turn-related behavior.
