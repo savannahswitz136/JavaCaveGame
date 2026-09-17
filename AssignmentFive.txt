@@ -1,0 +1,31 @@
+I spent some time learning about abstract classes in relation to Java. 
+The sources I read used the analogy of an abstract class being like “incomplete 
+blueprints.” They themselves do not create objects but rather create the “blueprint”
+or theme of other classes in relation to each other. That is still not a 
+concrete definition, however. An abstract class may contain Abstract methods, concrete methods, 
+constructors, and instance variables. An Abstract method does not contain a “body” 
+and therefore forces the subclasses to provide implementations themselves.
+ Concrete methods can also be declared within an abstract class, 
+and these are regular methods with a body and create shared 
+functionalities with the subclasses. The main reason to use an 
+abstract class is that the create conneuity in subclasses by defining a 
+“contract” that they have to follow. Due to this the prevent incomplete 
+classes being made as well as reducing duplication in code. 
+
+
+Sources: 
+https://www.javathinking.com/blog/why-do-we-need-abstract-classes-in-java/
+https://www.geeksforgeeks.org/java/abstract-classes-in-java/
+
+
+
+I added a variable count that counted every time the 
+program went through the combat loop. I then used a print 
+statement to show the user this variable as a way to better 
+understand the interface they were using. When I was working
+ with the interface, I got confused about how many changes 
+I was making in combat. So adding this small change really 
+helps the user overall understand the game they are playing 
+and creates a better overall user interface. It took us a while to 
+really find where the variable needed to be declared so that 
+it wouldn’t interfere with all the nested loops that the program is involved in. 
